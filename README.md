@@ -1,4 +1,4 @@
-wercker-box-golang
+wercker-box-golang-latest
 ==================
 
-Wercker box for Go
+Wercker box using the latest version of Go
