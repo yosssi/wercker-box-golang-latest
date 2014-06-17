@@ -35,9 +35,6 @@ script : |
 
   # Make actual go workspace dir structure
   mkdir -p "$HOME/go/{src,pkg,bin}"
-
-  # Install goveralls
-  sudo . /etc/profile; go get github.com/mattn/goveralls
 box-detect:
   priority : 900
   version :
