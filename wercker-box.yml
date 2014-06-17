@@ -14,14 +14,15 @@ packages :
   - bzr
 script : |
   version="1.3rc2"
+  filename="go{version}.linux-amd64.tar.gz"
 
   sudo apt-get update
   sudo apt-get install bzr
   sudo apt-get install mercurial
-  wget https://storage.googleapis.com/golang/${version}.linux-amd64.tar.gz
-  sudo tar -C /usr/local -xzf ${version}.linux-amd64.tar.gz
+  wget https://storage.googleapis.com/golang/{filename}
+  sudo tar -C /usr/local -xzf {filename}
   echo "export PATH=$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile
-  rm ${version}.linux-amd64.tar.gz
+  rm {filename}
 
   # Set GOPATH
   export GOPATH="$HOME/go"
