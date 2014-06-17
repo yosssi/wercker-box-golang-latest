@@ -37,7 +37,7 @@ script : |
   mkdir -p "$HOME/go/{src,pkg,bin}"
 
   # Install goveralls
-  sudo go get github.com/mattn/goveralls
+  sudo . /etc/profile; go get github.com/mattn/goveralls
 box-detect:
   priority : 900
   version :
