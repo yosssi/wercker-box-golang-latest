@@ -36,6 +36,9 @@ script : |
   # Make actual go workspace dir structure
   mkdir -p "$HOME/go/{src,pkg,bin}"
 
+  # Load profile
+  . /etc/profile
+
   # Install goveralls
   go get github.com/mattn/goveralls
 box-detect:
