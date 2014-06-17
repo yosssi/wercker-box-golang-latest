@@ -1,9 +1,9 @@
-name: golang
+name: golang-latest
 version: 1.0.0
 inherits: wercker/ubuntu12.04-webessentials@1.0.0
 type : main
 platform : ubuntu@12.04
-description : golang
+description : Wercker box using the latest version (go1.3rc2) of Go.
 keywords:
   - golang
   - go
@@ -13,8 +13,8 @@ packages :
   - mercurial
   - bzr
 script : |
-  version="1.3rc2"
-  filename="go${version}.linux-amd64.tar.gz"
+  version="go1.3rc2"
+  filename="${version}.linux-amd64.tar.gz"
 
   sudo apt-get update
   sudo apt-get install bzr
