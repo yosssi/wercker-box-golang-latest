@@ -1,5 +1,5 @@
 name: golang-latest
-version: 1.0.2
+version: 1.0.3
 inherits: wercker/ubuntu12.04-webessentials@1.0.0
 type : main
 platform : ubuntu@12.04
@@ -36,6 +36,8 @@ script : |
   # Make actual go workspace dir structure
   mkdir -p "$HOME/go/{src,pkg,bin}"
 
+  # Install goveralls
+  go get github.com/mattn/goveralls
 box-detect:
   priority : 900
   version :
