@@ -1,19 +1,19 @@
 name: golang-latest
-version: 1.0.8
+version: 1.0.9
 inherits: wercker/ubuntu12.04-webessentials@1.0.0
 type : main
 platform : ubuntu@12.04
-description : Wercker box using the latest version (go1.4rc1) of Go.
+description : Wercker box using the latest version (go1.4) of Go.
 keywords:
   - golang
   - go
 packages :
-  - golang@1.4rc1
+  - golang@1.4
   - git
   - mercurial
   - bzr
 script : |
-  version="go1.4rc1"
+  version="go1.4"
   filename="${version}.linux-amd64.tar.gz"
 
   sudo apt-get update
